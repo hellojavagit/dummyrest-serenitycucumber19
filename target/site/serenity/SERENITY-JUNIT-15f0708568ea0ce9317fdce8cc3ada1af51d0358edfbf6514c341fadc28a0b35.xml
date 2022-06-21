@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="2" name="Testing dummyrestapiexample website with different methods" skipped="1" tests="5" time="4.94" timestamp="2022-06-21T15:42:36.477+01:00[Europe/London]"><testcase name="Check if User can get all employee data"/><testcase name="Check if User can get single employee data"><skipped/></testcase><testcase name="Check if User can create a  single employee data"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;429&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;429&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;429&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restapiexample.dummy.cucumber.steps.EmployeeStepDefs.userSendsAPOSTRequestBySendingNameAndSalary(EmployeeStepDefs.java:48)&#13;
+✽.When User sends a POST request by sending name and salary(employee.feature:13)&#13;
+</system-err></testcase><testcase name="Check if User can update single employee data"><error message="Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: id." type="java.lang.IllegalArgumentException">Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: id.</error><system-err>Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: id.&#13;
+io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1336)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1223)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:124)&#13;
+net.serenitybdd.rest.filters.FieldsRecordingFilter.filter(FieldsRecordingFilter.java:40)&#13;
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)&#13;
+io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)&#13;
+io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:176)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.execute(RequestSpecificationDecorated.java:233)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.put(RequestSpecificationDecorated.java:105)&#13;
+net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated.put(RequestSpecificationDecorated.java:27)&#13;
+com.restapiexample.dummy.employeeinfo.EmployeeSteps.updateEmployee(EmployeeSteps.java:60)&#13;
+com.restapiexample.dummy.cucumber.steps.EmployeeStepDefs.userSendsAUpdateRequestToSingleEmployeeEndpoint(EmployeeStepDefs.java:56)&#13;
+✽.When User sends a update request to single employee  endpoint(employee.feature:17)&#13;
+</system-err></testcase><testcase name="Check if User can  delete employee data"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;429&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;429&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;429&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+com.restapiexample.dummy.cucumber.steps.EmployeeStepDefs.userVerifyThatTheEmployeeIsDeletedAndGetStatus(EmployeeStepDefs.java:72)&#13;
+✽.Then User verify that the employee is deleted and get status 200(employee.feature:22)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Testing dummyrestapiexample website with different methods","Check if User can create a  single employee data","FAILURE","2022-06-21T15:42:40.058+01:00[Europe/London]","0.0","1.22"
+"Testing dummyrestapiexample website with different methods","Check if User can  delete employee data","FAILURE","2022-06-21T15:42:41.388+01:00[Europe/London]","0.0","0.8"
